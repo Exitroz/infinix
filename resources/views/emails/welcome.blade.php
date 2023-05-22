@@ -277,9 +277,12 @@
                                        <div>
 													 	<div style="grid-template-columns: auto auto;grid-column-gap: 50px; padding: 5px; width: 100%; text-align: center; margin-bottom: 20px;">
 															<div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" style="width: 50px; height: 50px; color: #ffa800" viewBox="0 0 20 20" fill="currentColor">
+                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" style="width: 50px; height: 50px; color: #ffa800" viewBox="0 0 20 20" fill="currentColor">
                                                    <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
-                                               </svg>
+                                               </svg> -->
+                                               
+                                                <img width="200" class="in-slide-img uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-right" src="landing/img/web.jpg" data-src="landing/img/web.jpg" alt="image-slide" width="500" height="400" data-uk-img="">
+                
                                                 <h4 style="font-size: 16px; color: #ffa800;">Forex Spot Trading and Investments</h4>
                                                 <p style="text-align: center; font-size: 16px; ">Easy-to-understand plans and straightforward earnings.</p>
                                             	</div>

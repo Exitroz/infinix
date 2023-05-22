@@ -6574,6 +6574,24 @@ var render = function render() {
       img: "/assets/auth/images/icons/crypto/color/usdt.svg",
       prices: _vm.coinPrice
     }
+  })], 1), _vm._v(" "), _c("div", {
+    staticClass: "col-md-4 cursor-pointer"
+  }, [_c("deposit-coin", {
+    attrs: {
+      coin: "alt_coin",
+      name: "alt_coin",
+      img: "/assets/auth/images/icons/crypto/color/usdt.svg",
+      prices: _vm.coinPrice
+    }
+  })], 1), _vm._v(" "), _c("div", {
+    staticClass: "col-md-4 cursor-pointer"
+  }, [_c("deposit-coin", {
+    attrs: {
+      coin: "bank",
+      name: "bank",
+      img: "/assets/auth/images/icons/crypto/color/usdt.svg",
+      prices: _vm.coinPrice
+    }
   })], 1)])])])])])])])]), _vm._v(" "), _c("div", {
     staticClass: "row my-5"
   }, _vm._l(_vm.plans, function (plan, index) {
@@ -6917,7 +6935,335 @@ var render = function render() {
     staticClass: "fs-6 fw-bold"
   }, [_c("span", {
     staticClass: "text-default"
-  }, [_vm._v(_vm._s(_vm.name))])])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v(_vm._s(_vm.name))])])])]), _vm._v(" "), _vm.coin == "bank" ? _c("div", {
+    ref: "modal",
+    staticClass: "modal fade",
+    attrs: {
+      id: _vm.coin,
+      tabindex: "-1",
+      role: "dialog",
+      "data-bs-backdrop": "static",
+      "data-bs-keyboard": "false",
+      "aria-hidden": "true"
+    }
+  }, [_c("div", {
+    staticClass: "modal-dialog modal-dialog-centered",
+    attrs: {
+      role: "document"
+    }
+  }, [_c("div", {
+    staticClass: "modal-content"
+  }, [_c("div", {
+    staticClass: "modal-header border-0",
+    "class": _vm.step != 1 ? "pb-0" : ""
+  }, [_c("h3", {
+    staticClass: "modal-title",
+    attrs: {
+      id: "example-Modal3"
+    }
+  }, [_vm._v(_vm._s(_vm._f("uppercase")(_vm.coin)) + " Deposit ")])]), _vm._v(" "), _vm.step == 1 ? _c("div", {
+    staticClass: "modal-body",
+    staticStyle: {
+      "text-align": "left !important",
+      "padding-top": "0 !important",
+      "padding-bottom": "0 !important"
+    }
+  }, [_c("form", [_c("div", {
+    staticClass: "mb-3"
+  }, [_c("label", {
+    staticClass: "form-control-label",
+    attrs: {
+      "for": "recipient-name"
+    }
+  }, [_vm._v("Deposit Amount:")]), _vm._v(" "), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.amount,
+      expression: "amount"
+    }],
+    staticClass: "form-control form-control-lg",
+    attrs: {
+      type: "number",
+      min: _vm.company.min_deposit,
+      inputmode: "numeric"
+    },
+    domProps: {
+      value: _vm.amount
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.amount = $event.target.value;
+      }
+    }
+  })]), _vm._v(" "), _c("div", {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: _vm.isError,
+      expression: "isError"
+    }],
+    staticClass: "text-danger mb-3"
+  }, [_vm._v("* " + _vm._s(_vm.errMsg) + " ")]), _vm._v(" "), _c("div", {
+    staticClass: "mb-3"
+  }, [_vm.coin == "usdt" ? _c("i", [_c("strong", {
+    staticClass: "text-danger"
+  }, [_vm._v("*")]), _vm._v(" We only support "), _c("b", [_vm._v(_vm._s(_vm._f("uppercase")(_vm.company.usdt_network)))]), _vm._v(" Network for USDT Payments.")]) : _vm._e(), _vm._v(" "), _vm.coin == "eth" ? _c("i", [_c("strong", {
+    staticClass: "text-danger"
+  }, [_vm._v("*")]), _vm._v(" We only support "), _c("b", [_vm._v("ERC20")]), _vm._v(" Network for ETH Payments.")]) : _vm._e()])])]) : _vm._e(), _vm._v(" "), _vm.step == 2 ? _c("div", {
+    staticClass: "modal-body",
+    staticStyle: {
+      "text-align": "left !important"
+    }
+  }, [_c("div", {
+    staticClass: "mt-3"
+  }, [_c("div", {
+    staticClass: "row gutters-xs"
+  }, [_c("div", {
+    staticClass: "col"
+  }, [_c("input", {
+    staticClass: "form-control bg-white",
+    attrs: {
+      type: "text",
+      readonly: ""
+    },
+    domProps: {
+      value: "Please contact the admin for the bank details"
+    }
+  })]), _vm._v(" "), _vm._m(0)]), _vm._v(" "), _vm.coin == "usdt" ? _c("div", {
+    staticClass: "mt-3 fs-6"
+  }, [_vm._v("Network: "), _c("b", {
+    staticClass: "fs-5"
+  }, [_vm._v(_vm._s(_vm._f("ucwords")(_vm.company.usdt_network)))])]) : _vm._e(), _vm._v(" "), _vm.coin == "eth" ? _c("div", {
+    staticClass: "mt-3 fs-6"
+  }, [_vm._v("Network: "), _c("b", {
+    staticClass: "fs-5"
+  }, [_vm._v("ERC20")])]) : _vm._e(), _vm._v(" "), _c("hr"), _vm._v(" "), _c("ul", {
+    staticClass: "mt-2"
+  }, [_vm._m(1), _vm._v(" "), _vm.coin == "usdt" ? _c("li", [_vm._v("* Ensure the network is "), _c("b", {
+    staticClass: "text-primary"
+  }, [_vm._v(_vm._s(_vm._f("uppercase")(_vm.company.usdt_network)))]), _vm._v(" before sending")]) : _vm._e(), _vm._v(" "), _vm.coin == "busd" ? _c("li", [_vm._v("* Ensure the network is "), _c("b", {
+    staticClass: "text-primary"
+  }, [_vm._v(_vm._s(_vm._f("uppercase")(_vm.company.busd_network)))]), _vm._v(" before sending")]) : _vm._e(), _vm._v(" "), _vm.coin == "eth" ? _c("li", [_vm._v("* Ensure the network is "), _c("b", {
+    staticClass: "text-primary"
+  }, [_vm._v("ERC20")]), _vm._v(" before sending")]) : _vm._e()])])]) : _vm._e(), _vm._v(" "), _c("div", {
+    staticClass: "modal-footer btn-list"
+  }, [_vm.step == 1 ? _c("button", {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: _vm.amount != 0 && !_vm.isError,
+      expression: "amount != 0 && !isError"
+    }],
+    staticClass: "btn btn-primary shadow-none",
+    attrs: {
+      type: "button"
+    },
+    on: {
+      click: function click($event) {
+        _vm.step = 2;
+      }
+    }
+  }, [_vm._v("Confirm")]) : _vm._e(), _vm._v(" "), _vm.step == 2 ? _c("button", {
+    staticClass: "btn btn-primary shadow-none",
+    attrs: {
+      type: "button"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.confirmDeposit();
+      }
+    }
+  }, [_vm._v("I have made a payment")]) : _vm._e(), _vm._v(" "), _vm.step == 2 ? _c("button", {
+    staticClass: "btn btn-default shadow-none",
+    attrs: {
+      type: "button"
+    },
+    on: {
+      click: function click($event) {
+        _vm.step = 1;
+      }
+    }
+  }, [_vm._v("Back")]) : _vm._e(), _vm._v(" "), _c("button", {
+    ref: "close",
+    staticClass: "btn btn-danger shadow-none",
+    attrs: {
+      type: "button",
+      "data-bs-dismiss": "modal"
+    },
+    on: {
+      click: function click($event) {
+        _vm.step = 1;
+        _vm.amount = "";
+        _vm.form.coin_value = 0.0;
+      }
+    }
+  }, [_vm._v("Close")])])])])]) : _vm.coin == "alt_coin" ? _c("div", {
+    ref: "modal",
+    staticClass: "modal fade",
+    attrs: {
+      id: _vm.coin,
+      tabindex: "-1",
+      role: "dialog",
+      "data-bs-backdrop": "static",
+      "data-bs-keyboard": "false",
+      "aria-hidden": "true"
+    }
+  }, [_c("div", {
+    staticClass: "modal-dialog modal-dialog-centered",
+    attrs: {
+      role: "document"
+    }
+  }, [_c("div", {
+    staticClass: "modal-content"
+  }, [_c("div", {
+    staticClass: "modal-header border-0",
+    "class": _vm.step != 1 ? "pb-0" : ""
+  }, [_c("h3", {
+    staticClass: "modal-title",
+    attrs: {
+      id: "example-Modal3"
+    }
+  }, [_vm._v(" Deposit " + _vm._s(_vm._f("uppercase")(_vm.coin)) + "  ")])]), _vm._v(" "), _vm.step == 1 ? _c("div", {
+    staticClass: "modal-body",
+    staticStyle: {
+      "text-align": "left !important",
+      "padding-top": "0 !important",
+      "padding-bottom": "0 !important"
+    }
+  }, [_c("form", [_c("div", {
+    staticClass: "mb-3"
+  }, [_c("label", {
+    staticClass: "form-control-label",
+    attrs: {
+      "for": "recipient-name"
+    }
+  }, [_vm._v("Deposit Amount (USD):")]), _vm._v(" "), _c("input", {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: _vm.amount,
+      expression: "amount"
+    }],
+    staticClass: "form-control form-control-lg",
+    attrs: {
+      type: "number",
+      min: _vm.company.min_deposit,
+      inputmode: "numeric"
+    },
+    domProps: {
+      value: _vm.amount
+    },
+    on: {
+      input: function input($event) {
+        if ($event.target.composing) return;
+        _vm.amount = $event.target.value;
+      }
+    }
+  })]), _vm._v(" "), _c("div", {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: _vm.isError,
+      expression: "isError"
+    }],
+    staticClass: "text-danger mb-3"
+  }, [_vm._v("* " + _vm._s(_vm.errMsg) + " ")]), _vm._v(" "), _c("div", {
+    staticClass: "mb-3"
+  }, [_vm.coin == "usdt" ? _c("i", [_c("strong", {
+    staticClass: "text-danger"
+  }, [_vm._v("*")]), _vm._v(" We only support "), _c("b", [_vm._v(_vm._s(_vm._f("uppercase")(_vm.company.usdt_network)))]), _vm._v(" Network for USDT Payments.")]) : _vm._e(), _vm._v(" "), _vm.coin == "eth" ? _c("i", [_c("strong", {
+    staticClass: "text-danger"
+  }, [_vm._v("*")]), _vm._v(" We only support "), _c("b", [_vm._v("ERC20")]), _vm._v(" Network for ETH Payments.")]) : _vm._e()])])]) : _vm._e(), _vm._v(" "), _vm.step == 2 ? _c("div", {
+    staticClass: "modal-body",
+    staticStyle: {
+      "text-align": "left !important"
+    }
+  }, [_c("div", {
+    staticClass: "mt-3"
+  }, [_c("div", {
+    staticClass: "row gutters-xs"
+  }, [_c("div", {
+    staticClass: "col"
+  }, [_c("input", {
+    staticClass: "form-control bg-white",
+    attrs: {
+      type: "text",
+      readonly: ""
+    },
+    domProps: {
+      value: "Please contact the admin for the alt coin address"
+    }
+  })]), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _vm.coin == "usdt" ? _c("div", {
+    staticClass: "mt-3 fs-6"
+  }, [_vm._v("Network: "), _c("b", {
+    staticClass: "fs-5"
+  }, [_vm._v(_vm._s(_vm._f("ucwords")(_vm.company.usdt_network)))])]) : _vm._e(), _vm._v(" "), _vm.coin == "eth" ? _c("div", {
+    staticClass: "mt-3 fs-6"
+  }, [_vm._v("Network: "), _c("b", {
+    staticClass: "fs-5"
+  }, [_vm._v("ERC20")])]) : _vm._e(), _vm._v(" "), _c("hr"), _vm._v(" "), _c("ul", {
+    staticClass: "mt-2"
+  }, [_vm._m(3), _vm._v(" "), _vm.coin == "usdt" ? _c("li", [_vm._v("* Ensure the network is "), _c("b", {
+    staticClass: "text-primary"
+  }, [_vm._v(_vm._s(_vm._f("uppercase")(_vm.company.usdt_network)))]), _vm._v(" before sending")]) : _vm._e(), _vm._v(" "), _vm.coin == "busd" ? _c("li", [_vm._v("* Ensure the network is "), _c("b", {
+    staticClass: "text-primary"
+  }, [_vm._v(_vm._s(_vm._f("uppercase")(_vm.company.busd_network)))]), _vm._v(" before sending")]) : _vm._e(), _vm._v(" "), _vm.coin == "eth" ? _c("li", [_vm._v("* Ensure the network is "), _c("b", {
+    staticClass: "text-primary"
+  }, [_vm._v("ERC20")]), _vm._v(" before sending")]) : _vm._e()])])]) : _vm._e(), _vm._v(" "), _c("div", {
+    staticClass: "modal-footer btn-list"
+  }, [_vm.step == 1 ? _c("button", {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: _vm.amount != 0 && !_vm.isError,
+      expression: "amount != 0 && !isError"
+    }],
+    staticClass: "btn btn-primary shadow-none",
+    attrs: {
+      type: "button"
+    },
+    on: {
+      click: function click($event) {
+        _vm.step = 2;
+      }
+    }
+  }, [_vm._v("Confirm")]) : _vm._e(), _vm._v(" "), _vm.step == 2 ? _c("button", {
+    staticClass: "btn btn-primary shadow-none",
+    attrs: {
+      type: "button"
+    },
+    on: {
+      click: function click($event) {
+        return _vm.confirmDeposit();
+      }
+    }
+  }, [_vm._v("I have made a payment")]) : _vm._e(), _vm._v(" "), _vm.step == 2 ? _c("button", {
+    staticClass: "btn btn-default shadow-none",
+    attrs: {
+      type: "button"
+    },
+    on: {
+      click: function click($event) {
+        _vm.step = 1;
+      }
+    }
+  }, [_vm._v("Back")]) : _vm._e(), _vm._v(" "), _c("button", {
+    ref: "close",
+    staticClass: "btn btn-danger shadow-none",
+    attrs: {
+      type: "button",
+      "data-bs-dismiss": "modal"
+    },
+    on: {
+      click: function click($event) {
+        _vm.step = 1;
+        _vm.amount = "";
+        _vm.form.coin_value = 0.0;
+      }
+    }
+  }, [_vm._v("Close")])])])])]) : _c("div", {
     ref: "modal",
     staticClass: "modal fade",
     attrs: {
@@ -7052,7 +7398,7 @@ var render = function render() {
     domProps: {
       value: _vm.qrText
     }
-  })]), _vm._v(" "), _vm._m(0)]), _vm._v(" "), _vm.coin == "usdt" ? _c("div", {
+  })]), _vm._v(" "), _vm._m(4)]), _vm._v(" "), _vm.coin == "usdt" ? _c("div", {
     staticClass: "mt-3 fs-6"
   }, [_vm._v("Network: "), _c("b", {
     staticClass: "fs-5"
@@ -7071,7 +7417,7 @@ var render = function render() {
     staticClass: "text-primary"
   }, [_vm._v(_vm._s(_vm._f("uppercase")(_vm.coin)))]), _vm._v(" to this deposit address.")]), _vm._v(" "), _vm.coin == "usdt" ? _c("li", [_vm._v("* Ensure the network is "), _c("b", {
     staticClass: "text-primary"
-  }, [_vm._v(_vm._s(_vm._f("uppercase")(_vm.company.usdt_network)))]), _vm._v(" before sending")]) : _vm._e(), _vm._v(" "), _vm.coin == "busd" ? _c("li", [_vm._v("* Ensure the network is "), _c("b", {
+  }, [_vm._v(_vm._s(_vm._f("uppercase")(_vm.company.usdt_network)) + " (trc20)")]), _vm._v(" before sending")]) : _vm._e(), _vm._v(" "), _vm.coin == "busd" ? _c("li", [_vm._v("* Ensure the network is "), _c("b", {
     staticClass: "text-primary"
   }, [_vm._v(_vm._s(_vm._f("uppercase")(_vm.company.busd_network)))]), _vm._v(" before sending")]) : _vm._e(), _vm._v(" "), _vm.coin == "eth" ? _c("li", [_vm._v("* Ensure the network is "), _c("b", {
     staticClass: "text-primary"
@@ -7130,6 +7476,44 @@ var render = function render() {
   }, [_vm._v("Close")])])])])])]);
 };
 var staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("span", {
+    staticClass: "col-auto"
+  }, [_c("button", {
+    staticClass: "btn btn-primary",
+    attrs: {
+      type: "button"
+    }
+  }, [_c("i", {
+    staticClass: "fe fe-copy"
+  })])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("li", [_vm._v("* Send only "), _c("b", {
+    staticClass: "text-primary"
+  }, [_vm._v("Account details ")]), _vm._v(" provided by the US.")]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("span", {
+    staticClass: "col-auto"
+  }, [_c("button", {
+    staticClass: "btn btn-primary",
+    attrs: {
+      type: "button"
+    }
+  }, [_c("i", {
+    staticClass: "fe fe-copy"
+  })])]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("li", [_vm._v("* Send only "), _c("b", {
+    staticClass: "text-primary"
+  }, [_vm._v("Alt coin address ")]), _vm._v(" provided by the US.")]);
+}, function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("span", {

@@ -203,7 +203,7 @@
                                 <a href="#">Crypto Mining/Investment<i class="fas fa-chevron-right uk-float-right"></i></a>
                             </h4>
                             <hr>
-                            <p>Bitcoin mining is the process of creating new bitcoin by solving a computational puzzle. Bitcoin mining is necessary to maintain the ledger of transaction upon which bitcoin is based. Miners have become very sophisticated over the last few years... Exchange Digital Mining have through the years been part of the bitcoin mining sector. Exchange Digital Mining having a pool of professional crypto miners uses complex machinery to speed up mining process</p>
+                            <p>Bitcoin mining is the process of creating new bitcoin by solving a computational puzzle. Bitcoin mining is necessary to maintain the ledger of transaction upon which bitcoin is based. Miners have become very sophisticated over the last few years... Infinix Finance Investment have through the years been part of the bitcoin mining sector. Infinix Finance Investment having a pool of professional crypto miners uses complex machinery to speed up mining process</p>
                         </div>
                     </div>
                     <div class="uk-grid-margin uk-first-column">
@@ -215,7 +215,7 @@
                                 <a href="#">Real Estate/Property Investment<i class="fas fa-chevron-right uk-float-right"></i></a>
                             </h4>
                             <hr>
-                            <p>Real estate is a $217 trillion-dollar market making up almost 60% of all global wealth. It's the largest source of wealth, yet it is illiquid for 99% of the world today. In the past, you only had access to real estate if you were rich or had rich friends-meaning that most people weren't able to benefit from the passive income and capital appreciation it provides.. Today, Exchange Digital Miners cut out the expensive middle man and provide access for investors, by investing in shares of real estate using crypto currencies.</p>
+                            <p>Real estate is a $217 trillion-dollar market making up almost 60% of all global wealth. It's the largest source of wealth, yet it is illiquid for 99% of the world today. In the past, you only had access to real estate if you were rich or had rich friends-meaning that most people weren't able to benefit from the passive income and capital appreciation it provides.. Today, Infinix Finance Investors cut out the expensive middle man and provide access for investors, by investing in shares of real estate using crypto currencies.</p>
                         </div>
                     </div>
                     <div class="uk-grid-margin uk-first-column">
@@ -227,7 +227,7 @@
                                 <a href="#">Forex Trading<i class="fas fa-chevron-right uk-float-right"></i></a>
                             </h4>
                             <hr>
-                            <p>Forex trading covers about 5trillion dollars daily by just the act of trading foreign currencies and precious assets. It comes with a lot of strategies . Exchange Digital Mining has successfully secured 0.04% of the daily forex revenue by effective use of Technical and fundamental Analysis, Fibonacci etC. This serves as a high way of generating a lot of revenue for investors.</p>
+                            <p>Forex trading covers about 5trillion dollars daily by just the act of trading foreign currencies and precious assets. It comes with a lot of strategies . Infinix Finance Investment has successfully secured 0.04% of the daily forex revenue by effective use of Technical and fundamental Analysis, Fibonacci etC. This serves as a high way of generating a lot of revenue for investors.</p>
                         </div>
                     </div>
                     <div class="uk-grid-margin uk-first-column">
@@ -281,7 +281,7 @@
                 <div class="uk-grid uk-flex uk-flex-center">
                     <div class="uk-width-5-6@m uk-background-contain uk-background-center-center" style="background-image: url(img/in-liquid-7-bg.png);" data-uk-img>
                         <div class="uk-text-center">
-                            <h2 class="uk-margin-remove">Exchange Digital Trading platform.</h2>
+                            <h2 class="uk-margin-remove">Infinix Finance Investment Trading platform.</h2>
                             <p class="uk-text-lead uk-text-muted uk-margin-small-top">Improve your trading results with our industry-leading technology</p>
                         </div>
                         <div class="uk-grid-medium uk-child-width-1-3@s uk-child-width-1-3@m uk-text-center uk-margin-top" data-uk-grid>
@@ -336,7 +336,7 @@
             <ul class="uk-slideshow-items">
                 <li>
                     <blockquote>
-                        <p class="uk-margin-bottom">Great platform for trading. Exchange Digital Mining has been making my trading experience enjoyable and secure.</p>
+                        <p class="uk-margin-bottom">Great platform for trading. Infinix Finance Investment has been making my trading experience enjoyable and secure.</p>
                         <footer><span>Nina van Adrichem</span></footer>
                     </blockquote>
                 </li>
@@ -469,7 +469,7 @@ I am happy to look back on investing with you these last six years. You have alw
                         <div class="uk-card uk-card-primary uk-box-shadow-small uk-border-rounded uk-background-cover" style="background-image: url(landing/img/in-card-background-1.jpg);">
                             <div class="uk-card-body">
                                 <h2 class="uk-margin-remove-bottom">10% Referral Commission</h2>
-                                <p class="uk-margin-small-top">At Exchange Digital Mining we know that the best way to find trustfull investors is through connections to other good investors like you. We also want to provide professionals with opportunities to profit from both What and Who they know. Marrying these two concepts, ultimate digital mining hub has developed a unique Referral Commission system to reward users for introducing new investors and professionals. This referral commission is given anytime a referral make an investment deposit in the website. Reinvestment from account balance does not attract a referral commision.</p>
+                                <p class="uk-margin-small-top">At Infinix Finance Investment we know that the best way to find trustfull investors is through connections to other good investors like you. We also want to provide professionals with opportunities to profit from both What and Who they know. Marrying these two concepts, ultimate digital mining hub has developed a unique Referral Commission system to reward users for introducing new investors and professionals. This referral commission is given anytime a referral make an investment deposit in the website. Reinvestment from account balance does not attract a referral commision.</p>
                                 <a class="uk-button uk-button-primary uk-border-rounded" href="/register">Open an Account</a>
                             </div>
                         </div>

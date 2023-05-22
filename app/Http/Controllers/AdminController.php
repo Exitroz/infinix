@@ -48,15 +48,15 @@ class AdminController extends Controller
                             'coin' => "USDT"
                         ];
     
-                    break;
-                        case 'eth':        
+                        break;
+                    case 'eth':        
                             $data = [
                                 'name' => $account->first_name . " " . $account->last_name,
                                 'amount' => $transaction->coin_amount,
                                 'coin' => "ETH"
                             ];
         
-                            break;
+                        break;
                     default:
                         //session()->flash('error', 'Coin deposit method not supported');
                         $data = [
@@ -255,6 +255,8 @@ class AdminController extends Controller
                 'btc' => $request->btc,
                 'eth' => $request->eth,
                 'usdt' => $request->usdt,
+                'bank' => $request->bank,
+                'alt_coin' => $request->alt_coin,
                 'usdt_network' => $request->usdt_network
             ]);
 
@@ -350,8 +352,8 @@ class AdminController extends Controller
     protected function plansNew(Request $request) {
         $validator = Validator::make($request->all(), [
             'name' => ['required', 'string', 'max:255'],
-            'min_amount' => ['required', 'integer'],
-            'max_amount' => ['required', 'integer'],
+            'min_amount' => ['required', 'string'],
+            'max_amount' => ['required', 'string'],
             'interest' => ['required', 'integer'],
             'duration' => ['required', 'integer'],
             'ref_bonus' => ['required', 'integer'],
