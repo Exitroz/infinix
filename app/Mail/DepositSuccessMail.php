@@ -33,7 +33,7 @@ class DepositSuccessMail extends Mailable
     {
         $company = Company::first();
 
-        $address = 'support@exchangedigitalmining.com';
+        $address = 'support@infinixfinance.com';
         $subject = 'Deposit Successful';
         $name = $company->name;
         return $this->from($address, $name)

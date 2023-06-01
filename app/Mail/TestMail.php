@@ -6,7 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-
+use App\Models\Company;
 class TestMail extends Mailable
 {
     use Queueable, SerializesModels;
@@ -30,10 +30,10 @@ class TestMail extends Mailable
      */
     public function build()
     {
-
-        $address = 'support@exchangedigitalmining.com';
+        $company = Company::first();
+        $address = 'support@infinixfinance.com';
         $subject = 'Withdrawal Successful';
-        $name = 'support@exchangedigitalmining.com';
+        $name = $company->name;
         return $this->from($address, $name)
             ->view('emails.test')->with('data', $this->mail)
             ->subject($subject);
